@@ -16,11 +16,11 @@ const Card = ({ ID, Image, Name, VideogameGenre }) => {
             height={160}
           />
           <div className={style.name}>{Name}</div>
-          <div>
+          <div className={style.containGenres}> 
             <nav className={style.nav}>Genres: </nav>{" "}
             {VideogameGenre &&
               VideogameGenre?.map((genre, index) => (
-                <span key={genre}>
+                <span className={style.span} key={genre}>
                   {genre}
                   {index !== VideogameGenre.length - 1 ? ", " : ""}{" "}
                 </span>

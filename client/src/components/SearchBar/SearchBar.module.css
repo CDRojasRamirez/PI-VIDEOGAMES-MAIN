@@ -1,0 +1,46 @@
+/* .input {
+
+    background: rgb(93, 93, 93);
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+    appearance: none;
+    outline: none;
+    border: 1px solid rgb(115, 115, 115);
+}
+*/
+.input::placeholder{
+    color: rgba(194, 194, 194, 0.8);
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    width: 400px;
+    height: 40px;
+   }
+   
+   .input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+   }
+   
+
+.containerSearchBar {
+
+    
+    margin: 0;
+    padding: 10px;
+    background: rgb(4, 4, 4);
+    /* border-bottom: 20px solid black; */
+}
+
+.containerCards {
+    margin: 0;
+    padding: 0;
+}
