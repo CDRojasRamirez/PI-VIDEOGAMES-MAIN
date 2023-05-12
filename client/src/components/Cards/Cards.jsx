@@ -7,6 +7,7 @@ import Loader from "../../utils/Loader/Loader";
 import Select from "../../utils/Select/Select";
 
 
+
 const Cards = () => {
   const [character, setCharacter] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -32,7 +33,7 @@ const Cards = () => {
       {loading ? (
         <Loader />
       ) : (
-        <div> 
+        <div className={style.containTotal}> 
           {/**componente para filtrar seleccion */}
           <Select />
 
@@ -52,6 +53,7 @@ const Cards = () => {
                 );
               })}
           </ul>
+          
         </div>
       )}
     </>

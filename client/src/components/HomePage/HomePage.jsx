@@ -1,6 +1,7 @@
 import style from './HomePage.module.css'
 import { Link } from 'react-router-dom';
 
+
 import Cards from '../Cards/Cards'
 const HomePage = () => {
 
@@ -10,6 +11,7 @@ const HomePage = () => {
             <div className={style.containerCards}>
                 <Cards />
             </div>
+            
             
         </div>
     );

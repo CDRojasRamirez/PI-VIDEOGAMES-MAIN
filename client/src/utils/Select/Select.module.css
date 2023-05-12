@@ -1,12 +1,17 @@
 .containSelect{
 
-    text-align: center;
+    text-align:left;
+
+    position: fixed;
+    width: 100%;
+    margin-top: -47px;
+    background: rgb(41, 31, 46);
 }
 
 .containSelectOption{
     display: inline-block;
     background: none;
-    margin: 20px 10px 0 10px;
+    margin: 8px;
 }
 
 .LabelSelectOption{
@@ -19,7 +24,7 @@
   background: none;
 
   color: rgba(194, 194, 194, 0.8);
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
 
@@ -27,19 +32,18 @@
 
 .SelectOption{
 
-    margin: 0; /* elimina el margen por defecto */
-  padding: 10px; /* elimina el padding por defecto */
+    margin: 5px 0 5px 0; /* elimina el margen por defecto */
+  padding: 4px; /* elimina el padding por defecto */
   border: none; /* elimina el borde por defecto */
-  font-size: 24px; /* establece el tamaño de fuente igual al del elemento padre */
+  font-size: 15px; /* establece el tamaño de fuente igual al del elemento padre */
   color: inherit; /* establece el color igual al del elemento padre */
   appearance: none;
   background: none;
 
-  color: rgba(0, 0, 0, 0.8);
-    font-size: 19px;
+  color: rgba(255, 255, 255, 0.8);
     font-family: monospace;
     font-weight: 1000;
 
-    background: rgb(255, 255, 255);
+    background:#8707ff;
     border-radius: 5px;
 }

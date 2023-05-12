@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom"
-import style from "./SearchBar.module.css"
+import style from "./Footer.module.css"
 
-const SearchBar = () => {
+const Footer = () => {
 
     return (
-        <div className={style.containerSearchBar}>
-            <Link to='/home'>
-                <button style={
+        <footer>
+            <div className={style.containerFooter}>
+            {/* <button style={
                     {
-                        "top":"9.5px",
+                        
                         "right":"1205px",
+                        "bottom":"0",
                         "width":"300px",
                         "fontSize":"16px",
                         "padding":"20px",
@@ -17,8 +18,7 @@ const SearchBar = () => {
                         // "background":"rgb(14, 1, 31)",
                         
                     }}
-                >Daniel's Arcade</button>
-            </Link>
+                    >REDES SOCIALES</button>
                 <Link to={'/creategame'} className={style.btn}>
                     <button style={
                     {
@@ -32,12 +32,14 @@ const SearchBar = () => {
                         
                     }}
                     >Create Game</button>
-                    </Link>
+                    </Link> */}
                 {/* <input type="text" className={style.input} placeholder='  Buscar un videojuego' /> */}
                 
-                    <input type="text" name="text" className={style.input} placeholder="Buscar un videojuego...."></input>
+                    {/* <input type="text" name="text" className={style.input} placeholder="Buscar un videojuego...."></input> */}
+                    <h1 style={{"background":"none", "color":"white"}}>FOOTER EN PROCESO</h1>
             </div>
+        </footer>
     )
 }
 
-export default SearchBar;
+export default Footer;

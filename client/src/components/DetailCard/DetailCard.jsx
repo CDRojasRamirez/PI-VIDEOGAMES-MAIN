@@ -44,39 +44,43 @@ const DetailCard = () => {
         <Loader />
       ) : (
         <div className={style.bodyT}>
-          <div className={style.name}>{character.Name}</div>
-
-          <div className={style.container}>
-            <div>
+          <div className={style.name}>
+            <span className={style.span}>{character.Name}</span>
+          </div>
+            <div className={style.divImg}>
               <img
                 src={character.Image}
                 alt={character.Name}
                 className={style.img}
               />
             </div>
-            <div className={style.containDetail}>
               <div className={style.detail}>
-                Platforms:{" "}
+                <nav className={style.nav} style={{"fontWeight":"1000"}}>Description:</nav>
+                <nav className={style.nav} >{character.Description}</nav>
+              </div>
+              <div className={style.detail}>
+                <nav className={style.nav} style={{"fontWeight":"1000"}}>Platforms:{" "}</nav>
                 {character.Platforms &&
                   character.Platforms.map((platform, index) => (
-                    <span key={platform}>
+                    <span className={style.nav} key={platform}>
                       {platform}
                       {index !== character.Platforms.length - 1 ? ", " : ""}
                     </span>
                   ))}
               </div>
               <div className={style.detail}>
-                Description: {character.Description}
+                <nav className={style.nav} style={{"fontWeight":"1000"}}>Released Date:</nav>
+                <nav className={style.nav}>{character.Released_at}</nav>
               </div>
               <div className={style.detail}>
-                Released_at: {character.Released_at}
+                <nav className={style.nav} style={{"fontWeight":"1000"}}>Rating: </nav>
+                <nav className={style.nav}>{character.Rating}</nav>
               </div>
-              <div className={style.detail}>Rating: {character.Rating}</div>
               <div className={style.detail}>
-                <nav className={style.nav}>Genres: </nav>{" "}
+                <nav className={style.nav} style={{"fontWeight":"1000"}}>Genres: </nav>{" "}
                 {character.VideogameGenre &&
                   character.VideogameGenre.map((genre, index) => (
-                    <span key={genre}>
+                    <span key={genre} className={style.nav}>
                       {genre}
                       {index !== character.VideogameGenre.length - 1
                         ? ", "
@@ -84,9 +88,9 @@ const DetailCard = () => {
                     </span>
                   ))}
               </div>
-            </div>
+
           </div>
-        </div>
+  
       )}
     </>
   );
