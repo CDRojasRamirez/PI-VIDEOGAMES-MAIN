@@ -1,11 +1,11 @@
 
-import style from './Select.module.css'
+import style from './SelectFavorite.module.css'
 import { useDispatch } from "react-redux"
 import { filtrarDestino, reset, filtrarGenre, filtrarOrder } from '../../redux/action';
 import { useState } from 'react';
 
 
-const Select = () => {
+const SelectFavorite = () => {
 
   const dispatch = useDispatch()
 
@@ -98,4 +98,4 @@ const Select = () => {
     )
 }
 
-export default Select;
+export default SelectFavorite;

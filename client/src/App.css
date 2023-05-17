@@ -3,11 +3,13 @@
 }
 * {
   margin: 0;
-background: rgb(14, 1, 31);
+/* background: rgb(14, 1, 31);
 background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,0,205,1) 73%, rgba(0,212,255,1) 100%);
-background:#8707ff;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,0,205,1) 73%, rgba(0,212,255,1) 100%); 
+background:#8707ff90;
+*/
 
+background: #5e00b6;
 }
 /*
 .App-logo {

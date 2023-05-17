@@ -1,15 +1,15 @@
 import style from './HomePage.module.css'
-import { Link } from 'react-router-dom';
-
+import Footer from '../Footer/Footer';
 
 import Cards from '../Cards/Cards'
-const HomePage = () => {
+const HomePage = ({character, loading}) => {
 
     return (
         <div className={style.containerHomePage}>
             
             <div className={style.containerCards}>
-                <Cards />
+                <Cards key={character.ID} character={character} loading={loading} />
+                <Footer />
             </div>
             
             

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import style from './FormPage.module.css'
 
 const FormPage = () => {
 
@@ -9,62 +10,24 @@ const FormPage = () => {
   };
 
   return (
-    <div style={{ position: "relative", height: "150px" }}>
-      <h3 style={{ color: "white" }}>Formulario</h3>
-      <form action="">
-        <label htmlFor="" style={{ color: "white" }}>
-          Nombre:{" "}
-        </label>
-        <input type="text" />
-        <label htmlFor="" style={{ color: "white" }}>
-          Descripcion:{" "}
-        </label>
-        <input type="text" />
-        <label htmlFor="" style={{ color: "white" }}>
-          Plataformas:{" "}
-        </label>
-        <input type="text" />
-        <label htmlFor="" style={{ color: "white" }}>
-          Fecha de lanzamiento:{" "}
-        </label>
-        <input type="text" />
-        <label htmlFor="" style={{ color: "white" }}>
-          Rating:{" "}
-        </label>
-        <input type="text" />
-        <label htmlFor="" style={{ color: "white" }}>
-          Generos:{" "}
-        </label>
-        <select
-          name=""
-          id="selectGenres"
-          style={{
-            color: "white",
-            position: "absolute",
-            top: "100%",
-            zIndex: "1",
-          }}
-          multiple
-          required
-          size={showGenres ? "5" : "1"}
-          onClick={toggleGenres}
-        >
-            <option value="DEFAULT" disable style={{ color: "white" }}>Genres</option>
-          <option value="Action">Action</option>
-          <option value="Adventure">Adventure</option>
-          <option value="RPG">RPG</option>
-          <option value="Shooter">Shooter</option>
-          <option value="Puzzle">Puzzle</option>
-          <option value="Indie">Indie</option>
-          <option style={{ color: "white" }} value="Platformer">
-            Platformer
-          </option>
-          <option value="Massively Multiplayer">
-            Massively Multiplayer
-          </option>
-        </select>
-      </form>
+
+    <form className={style.form}>
+    <p>Login</p>
+    <div className={style.group}>
+      <input required="true" className={style.mainInput} type="text" />
+      <span className={style.highlightSpan} ></span>
+      <label className={style.lebalEmail} >Email</label>
     </div>
+    <div className={style.container1}>
+      <div className={style.group}>
+        <input required="true" className={style.mainInput} type="text" />
+        <span className={style.highlightSpan} ></span>
+        <label className={style.lebalEmail} >password</label>
+      </div>
+    </div>
+    <button className={style.submit} >submit</button>
+  </form>
+
   );
 };
 

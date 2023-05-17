@@ -1,0 +1,9 @@
+
+export const GET_ALL_GAMES = "GET_ALL_GAMES"
+export const GET_GAME_BY_NAME = "GET_GAME_BY_NAME"
+export const FILTRAR_DESTINO = "FILTRAR_DESTINO"
+export const FILTRAR_GENRE = "FILTRAR_GENRE"
+export const FILTRAR_ORDER = "FILTRAR_ORDER"
+export const ADD_FAVORITES = "ADD_FAVORITES"
+export const DELETE_FAVORITES = "DELETE_FAVORITES"
+export const RESET = "RESET"

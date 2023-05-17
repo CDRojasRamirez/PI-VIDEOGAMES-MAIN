@@ -1,0 +1,209 @@
+/* .input {
+
+    background: rgb(93, 93, 93);
+    width: 400px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+    appearance: none;
+    outline: none;
+    border: 1px solid rgb(115, 115, 115);
+}
+*/
+.input::placeholder{
+    color: rgba(194, 194, 194, 0.8);
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input {
+    color: #8707ff;
+    border: 2px solid #ffd207;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    width: 400px;
+    height: 40px;
+    font-size: 19px;
+   }
+   
+   .input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+   }
+   
+
+.containerSearchBar {
+
+    
+    margin: 0;
+    padding: 10px;
+    background: rgb(4, 4, 4);
+    /* border-bottom: 20px solid black; */
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+}
+
+.containerCards {
+    margin: 0;
+    padding: 0;
+}
+
+.btnStyle {
+
+    top: 14px;
+    right: 550px;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.btnStyle:hover {
+
+    animation: none;
+    text-shadow: none;
+    animation-timing-function: none;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+
+}
+
+.btnStyle::after {
+    --move1: none;
+    --move2: none;
+    --move3: none;
+    --move4: none;
+    --move5: none;
+    --move6: none;
+    clip-path: none;
+    content: none;
+    position: none;
+  }
+
+/*****************************************************/
+nav,nav::after {
+    padding: 20px 50px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  nav::after {
+    --move1: inset(50% 50% 50% 50%);
+    --move2: inset(31% 0 40% 0);
+    --move3: inset(39% 0 15% 0);
+    --move4: inset(45% 0 40% 0);
+    --move5: inset(45% 0 6% 0);
+    --move6: inset(14% 0 61% 0);
+    clip-path: var(--move1);
+    content: 'HOME';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  
+  nav:hover::after {
+    animation: glitch_4011 1s;
+    text-shadow: 10 10px 10px black;
+    animation-timing-function: steps(2, end);
+    text-shadow: -3px -3px 0px #d28200, 3px 3px 0px #e9b44b;
+    background-color: transparent;
+    border: 3px solid #d28200;
+  }
+  
+  nav:hover {
+    text-shadow: -1px -1px 0px #d28200, 1px 1px 0px #e99d4b;
+  }
+  
+  nav:hover {
+    background-color: transparent;
+    border: 1px solid #d28200;
+    box-shadow: 0px 10px 10px -10px #d28200;
+  }
+  
+  @keyframes glitch_4011 {
+    0% {
+      clip-path: var(--move1);
+      transform: translate(0px,-10px);
+    }
+  
+    10% {
+      clip-path: var(--move2);
+      transform: translate(-10px,10px);
+    }
+  
+    20% {
+      clip-path: var(--move3);
+      transform: translate(10px,0px);
+    }
+  
+    30% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    40% {
+      clip-path: var(--move5);
+      transform: translate(10px,-10px);
+    }
+  
+    50% {
+      clip-path: var(--move6);
+      transform: translate(-10px,10px);
+    }
+  
+    60% {
+      clip-path: var(--move1);
+      transform: translate(10px,-10px);
+    }
+  
+    70% {
+      clip-path: var(--move3);
+      transform: translate(-10px,10px);
+    }
+  
+    80% {
+      clip-path: var(--move2);
+      transform: translate(10px,-10px);
+    }
+  
+    90% {
+      clip-path: var(--move4);
+      transform: translate(-10px,10px);
+    }
+  
+    100% {
+      clip-path: var(--move1);
+      transform: translate(0);
+    }
+  }
+  
+  nav {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* change this value to adjust the distance from the right edge of the screen */
+  }
+/*******************************************************/
+
+.iconLupa {
+
+    background: none;
+    color: rgb(142, 142, 142);
+}
+
+.iconLupa:hover {
+
+  color: #8707ff;
+}

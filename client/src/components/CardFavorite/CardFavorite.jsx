@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
-import style from "./Card.module.css";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import style from "./CardFavorite.module.css";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { addFavorites, deleteFavorites } from "../../redux/action";
-import { useEffect } from "react";
-import { useSelector } from "react-redux";
 
-const Card = ({ ID, Image, Name, VideogameGenre }) => {
+const CardFavorite = ({ ID, Image, Name, VideogameGenre }) => {
   const [ fav, setFav ] = useState({ fav: false })
   const dispatch = useDispatch()
   const { myFavorites } = useSelector(state => state)
@@ -24,11 +22,11 @@ const Card = ({ ID, Image, Name, VideogameGenre }) => {
   const handleFav = () => {
     if(fav.fav){
       setFav({ fav: false})
-      dispatch(deleteFavorites(ID))
+      dispatch(addFavorites(ID))
     }
     else{
       setFav({ fav: true})
-      dispatch(addFavorites(ID))
+      dispatch(deleteFavorites(ID))
     }
   }
   return (
@@ -67,4 +65,4 @@ const Card = ({ ID, Image, Name, VideogameGenre }) => {
   );
 };
 
-export default Card;
+export default CardFavorite;

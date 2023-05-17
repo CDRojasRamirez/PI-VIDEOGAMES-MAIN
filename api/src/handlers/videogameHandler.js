@@ -70,7 +70,7 @@ const handleAllGame = async (req, res) => {
 const handleGetByName = async (req, res) => {
  try {
     const { name } = req.query
-
+console.log(name)
  const results = await getGameByName(name)
  res.status(200).json(results)
 

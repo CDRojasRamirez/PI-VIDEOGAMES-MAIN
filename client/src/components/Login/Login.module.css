@@ -1,0 +1,86 @@
+
+.loginButton {
+
+  top: 450px;
+  right: 695px;
+  font-size: 25px;
+  padding: 10px;
+
+}
+
+.loginButton:hover {
+
+  animation: none;
+  text-shadow: none;
+  animation-timing-function: none;
+  background-color: none;
+  border: none;
+  box-shadow: none;
+
+}
+
+.loginButton::after {
+  --move1: none;
+  --move2: none;
+  --move3: none;
+  --move4: none;
+  --move5: none;
+  --move6: none;
+  clip-path: none;
+  content: none;
+  position: none;
+}
+
+.loginContainer {
+
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+
+ margin: 250px auto;
+
+
+}
+
+.loginContainer h2 {
+  margin-top: 0;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input[type="text"],
+.formGroup input[type="password"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.loginButton {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #3e8e41;
+}

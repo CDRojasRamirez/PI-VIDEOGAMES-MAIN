@@ -5,7 +5,7 @@
     position: fixed;
     width: 100%;
     margin-top: -47px;
-    background: rgb(41, 31, 46);
+    background: #191405;
     z-index: 1;
 }
 
@@ -24,7 +24,7 @@
   appearance: none;
   background: none;
 
-  color: rgba(194, 194, 194, 0.8);
+  color: rgba(224, 224, 224, 0.8);
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 1000;
@@ -36,15 +36,14 @@
     margin: 5px 0 5px 0; /* elimina el margen por defecto */
   padding: 4px; /* elimina el padding por defecto */
   border: none; /* elimina el borde por defecto */
-  font-size: 15px; /* establece el tamaño de fuente igual al del elemento padre */
+  font-size: 16px; /* establece el tamaño de fuente igual al del elemento padre */
   color: inherit; /* establece el color igual al del elemento padre */
   appearance: none;
   background: none;
-
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(28, 28, 28, 0.8);
     font-family: monospace;
     font-weight: 1000;
 
-    background: #5e00b6;
+    background: #d28200;
     border-radius: 5px;
 }

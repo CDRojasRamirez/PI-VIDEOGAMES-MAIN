@@ -64,7 +64,7 @@ const getGameByName = async (name) => {
   const filtrado = arrClean.filter(ar =>  ar.Name.toLowerCase().includes(name.toLowerCase()));
   const infoDB = await Videogame?.findAll({ where: { Name: { [Op.iLike]: `%${name}%` }} });
   
-  if(!infoDB.length || !filtrado.length) throw new Error('No existe un juego con ese nombre')
+  // if(!infoDB.length || !filtrado.length) throw new Error('No existe un juego con ese nombre')
   
   result = [...(infoDB || []),...filtrado];
   return result.slice(0, 15);

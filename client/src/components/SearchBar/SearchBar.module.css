@@ -24,6 +24,7 @@
     background: transparent;
     width: 400px;
     height: 40px;
+    font-size: 19px;
    }
    
    .input:active {
@@ -42,6 +43,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
 
 }
 
@@ -49,3 +51,40 @@
     margin: 0;
     padding: 0;
 }
+
+.btnStyle {
+
+    top: 14px;
+    right: 550px;
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.btnStyle:hover {
+
+    animation: none;
+    text-shadow: none;
+    animation-timing-function: none;
+    background-color: none;
+    border: none;
+    box-shadow: none;
+
+}
+
+.btnStyle::after {
+    --move1: none;
+    --move2: none;
+    --move3: none;
+    --move4: none;
+    --move5: none;
+    --move6: none;
+    clip-path: none;
+    content: none;
+    position: none;
+  }
+  
+  .iconLupa {
+
+    background: none;
+  }

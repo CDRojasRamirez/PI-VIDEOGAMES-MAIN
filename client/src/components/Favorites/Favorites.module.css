@@ -3,13 +3,13 @@
 
     display: grid;
     grid-template-columns: repeat(auto-fill, 260px);
-    gap: 40px;
+    gap: 100px;
     padding: 10px;
     padding-top: 27px;
     justify-content: center;
-    background: #5e00b6;
-    
+    background: #191405;
     margin-top: 130px;
+    height: 100vh;
     padding-bottom: 27px;
     
 }

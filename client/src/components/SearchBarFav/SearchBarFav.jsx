@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import style from "./SearchBar.module.css";
+import style from "./SearchBarFav.module.css";
 import { useState } from "react";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
-const SearchBar = ({ searchBtn, handleInicio }) => {
+const SearchBarFav = ({ searchBtn, handleInicio }) => {
   const [game, setGame] = useState("");
 
   const handleChange = (e) => {
@@ -23,19 +23,21 @@ const SearchBar = ({ searchBtn, handleInicio }) => {
 
 {/*******************************************************/}
       <Link to="/home">
-        <button
+        <nav
           style={{
             top: "9.5px",
             right: "1205px",
             width: "300px",
             fontSize: "16px",
             padding: "20px",
-            background: "none",
+            paddingLeft: "0",
+            paddingRight: "0",
+            margin: "0",
           }}
           onClick={() => handleInicio()}
         >
           Daniel's Arcade
-        </button>
+        </nav>
       </Link>
 
 {/*******************************************************/}
@@ -54,38 +56,42 @@ const SearchBar = ({ searchBtn, handleInicio }) => {
 
       {/*******************************************************/}
       <Link to={"/favorites"} className={style.btn}>
-        <button
+        <nav
           style={{
             top: "9.5px",
             right: "300px",
             width: "220px",
             fontSize: "16px",
             padding: "20px",
+            paddingLeft: "0",
+            paddingRight: "0",
             background: "none",
           }}
         >
           Favorites
-        </button>
+        </nav>
       </Link>
 
 {/*******************************************************/}
       <Link to={"/creategame"} className={style.btn}>
-        <button
+        <nav
           style={{
             top: "9.5px",
             right: "43px",
             width: "220px",
             fontSize: "16px",
             padding: "20px",
+            paddingLeft: "0",
+            paddingRight: "0",
             background: "none",
           }}
         >
           Create Game
-        </button>
+        </nav>
       </Link>
 {/*******************************************************/}      
     </div>
   );
 };
 
-export default SearchBar;
+export default SearchBarFav;

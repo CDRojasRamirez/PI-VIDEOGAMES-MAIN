@@ -3,12 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from "react-query"
+import { ReactQueryDevtools } from "react-query/devtools"
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 ReactDOM.render(
 
-    <BrowserRouter>
+  // <QueryClientProvider client={QueryClient}>
+  //   <ReactQueryDevtools />
+  //   </QueryClientProvider>
+    <Provider store={store}>
+      <BrowserRouter>
       <App />
-    </BrowserRouter>,
+    </BrowserRouter>
+    </Provider>,
+  
   document.getElementById('root')
 );
 
